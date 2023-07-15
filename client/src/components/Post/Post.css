@@ -1,0 +1,77 @@
+.post {
+    width: 285px;
+    margin: 0px 30px 40px 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.4);
+}
+
+
+.postImg{
+    width: 285px;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+
+.postInfo{
+    display: flex;
+    margin-top: 5px;
+    flex-direction: column;
+    align-items: center;
+    padding : 10px 0px 0px 4px;
+}
+
+
+.postCat{
+    font-family: "Varela Round", sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    color: #be9656;
+    line-height: 20px;
+    margin-top: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+.postTitle{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+
+.postDate{
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 13px;
+    color: #999;
+    margin-top: 5px;
+}
+
+
+.postDes{
+    font-family: "Varela Round", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #444;
+    line-height: 24px;
+    margin-top: 5px;
+    padding-left : 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+
+    /* For showing only four lines */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
