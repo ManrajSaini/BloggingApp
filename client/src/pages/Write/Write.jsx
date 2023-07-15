@@ -36,7 +36,7 @@ export default function Write() {
 
     try {
       const res = await axios.post("https://blogappmanrajsingh.onrender.com/api/posts", newPost);
-      // window.location.replace("https://blogappmanrajsingh.onrender.com/post/" + res.data._id);
+      window.location.replace("https://blogappmanrajsingh.onrender.com/post/" + res.data._id);
     } catch (err) {
       console.error(err);
     }
