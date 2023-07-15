@@ -19,7 +19,7 @@ export default function SinglePost() {
 
   useEffect(() => {
     const getPost = async () => {
-      const res = await axios.get("/posts/" + path);
+      const res = await axios.get("https://blogappmanrajsingh.onrender.com/api/posts/" + path);
       setPost(res.data);
       setTitle(res.data.title);
       setDesc(res.data.desc);
@@ -29,7 +29,7 @@ export default function SinglePost() {
 
   const handleDelete = async () => {
     try {
-      await axios.delete("/posts/" + path, {
+      await axios.delete("https://blogappmanrajsingh.onrender.com/api/posts/" + path, {
         data: { username: user.username },
       });
       window.location.replace("/");
@@ -40,7 +40,7 @@ export default function SinglePost() {
 
   const handleUpdate = async () => {
     try {
-      await axios.put("/posts/" + path, {
+      await axios.put("https://blogappmanrajsingh.onrender.com/api/posts/" + path, {
         username: user.username,
         title: title,
         desc: desc,
